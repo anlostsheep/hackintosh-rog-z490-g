@@ -1,3 +1,5 @@
+[TOC]
+
 # Hackintosh ROG Z490-G
 
 > 华硕 ROG Z490-G + Intel 10700K + AMD Radeon RX560 显卡黑苹果 EFI 制作分享
@@ -109,9 +111,9 @@
 
 ## 其他无法展示的功能
 
-| 睡眠             | 睡眠正常，定制 USB 端口后即功能正常(如你的机器会出现睡眠即醒的问题可以加入 `SSDT-GPRW.aml` 补丁) |
-| ---------------- | ------------------------------------------------------------ |
-| Apple Watch 解锁 | 在`安全性与隐私`->`通用`中开启使用 Apple Watch 解锁 App 和 Mac |
+| 睡眠 | 睡眠正常，定制 USB 端口后即功能正常(如你的机器会出现睡眠即醒的问题可以加入 `SSDT-GPRW.aml` 补丁) |
+| ---- | ------------------------------------------------------------ |
+| 主题 | 使用定制的主题套装 [BsxOc1](https://github.com/blackosx/BsxOc1) |
 
 
 
@@ -145,21 +147,82 @@
 
    **重点：** *修改完启动参数后要重启一遍进入 macOS 使启动参数生效再重启一遍验证启动参数是否能解决问题(说人话就是改一次重启参数要重启两遍才能判定改动的重启参数能否解决问题，PS: 我因为只重启一次验证，以为每个区域都有问题，直接重启到怀疑人生)*
 
-   `ROG Z490-G` 的屏蔽区域为: 0x54-0x58
+   `ROG Z490-G` 的屏蔽区域为: 0x57-0x58
 
-   ![rtc-fix](https://s4.ax1x.com/2022/01/15/7JFd7q.png)
+   ![rtc-fix](https://s4.ax1x.com/2022/01/16/7tYWy4.png)
+
+## 引导方式
+
+### OpenCore 引导，版本 [0.7.5 RELEASE](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.5)
+
+   > 至于为什么没有使用更新的 0.7.6+？是因为官方的 [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) 文档指导只支持到 0.7.5，后面跟随文档升级再升级 OC 版本(主要是懒，不想细看 OC 每个版本升级的 Differences.pdf 文档)
+
+   ![version](https://s4.ax1x.com/2022/01/16/7tUdyD.png)
 
    
 
+   ### OpenCore 主题
+
+   > 使用不同的主题需对应修改不同的 icon 图标，根据个人喜好制作即可，制作教程可参考远景此篇文章：[自制一个属于自己的oc主题，背景及图标定制教程（新版转换app)](https://bbs.pcbeta.com/viewthread-1883489-1-1.html)
+
+   ![theme](https://s4.ax1x.com/2022/01/16/7ttpkt.jpg)
 
 
 
+## 安装前主板 BIOS 设置
+
+### OC 推荐开启项
+
+- VT-x：CPU的硬件虚拟化技术的一种指令集
+  - Advanced -> CPU Configuration -> Intel VT-x Technology -> Supported
+- Hyper-Threading：超线程技术
+  - Advanced -> CPU Configuration -> Hyper-Threading -> Enabled
+- Above 4G Decoding：大于 4G 的编解码空间
+  - Advanced -> System Agent(SA) Configuration -> Above 4G Decoding -> Enabled
+- 核显开启：
+  - Advanced -> System Agent(SA) Configuration -> Graphic Configuration -> iGPU Multi-Monitor -> Enabled
+  - Advanced -> System Agent(SA) Configuration -> Graphic Configuration -> DVMT Pre-Allocated -> 64M(或以上)
+- USB XHCI Hand-off:
+  - Advanced -> USB Configuration -> XHCI Hand-off -> Enabled
+- SATA Mode: AHCI
+  - Advanced -> PCH Storage Configuration -> SATA Controller(s) -> Enabled
+  - Advanced -> PCH Storage Configuration -> SATA Mode Selection -> AHCI
 
 
 
+### OC 推荐关闭项
+
+- CSM:
+  - Boot -> CSM -> Launch CSM -> Disabled
+- Secure Boot:
+  - Boot -> Secure Boot ->  OS Type -> Other OS
+- Fast Boot:
+  - Boot -> Boot Confuguration -> Fast Boot -> Disabled
+- VT-d:
+  - Advanced -> System Agent(SA) Configuration -> VT-d -> Disabled
+- Intel SGX:
+  - Advanced -> CPU Configuration -> Software Guard Extensions(SGX) -> Disabled
+- CFG Lock:
+  - 此主板默认开启，BIOS 中没有此选项
 
 
 
+# 安装过程
+
+> 略......
 
 
 
+# EFI 食用方式
+
+1. 下载 `RELEASE` 版本中的 EFI-share 文件并改名为 EFI 文件
+
+2. 使用 [Propertree](https://github.com/corpnewt/ProperTree) 或者 [OCAT](https://github.com/ic005k/QtOpenCoreConfig) 打开 EFI/OC/config.plist 文件
+
+3. 使用 [genSMBIOS](https://github.com/corpnewt/GenSMBIOS) 生成机器对应的三码信息放入到如下图样例所示：
+
+   ![smbios-info](https://s4.ax1x.com/2022/01/16/7t0a4A.png)
+
+   又或者使用 OCAT 自动生成三码:
+
+   ![ocat-info](https://s4.ax1x.com/2022/01/16/7t07bF.png)
