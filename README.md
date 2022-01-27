@@ -21,15 +21,11 @@
 
 ## 硬件外观
 
-![appearances1](https://s4.ax1x.com/2022/01/15/7G1mb8.png)
+![IMG_2920](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-29-42-IMG_2920.jpeg)
 
+![IMG_2925](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-30-36-IMG_2925.jpeg)
 
-
-![appearance2](https://s4.ax1x.com/2022/01/15/7G10PJ.png)
-
-
-
-![appearance3](https://s4.ax1x.com/2022/01/15/7G1rx1.png)
+![IMG_2924](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-31-34-IMG_2924.jpeg)
 
 
 
@@ -37,31 +33,29 @@
 
 ## 关于本机
 
-<img src="https://s4.ax1x.com/2022/01/15/7G14Gd.png" alt="about" style="zoom:50%;" />
+![7G14Gd](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-34-07-7G14Gd.png)
 
 
 
 ## CPU 睿频
 
-<img src="https://s4.ax1x.com/2022/01/15/7G3koF.png" alt="turbo" style="zoom:50%;" />
+<img src="https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-34-40-7G3koF.png" alt="7G3koF" style="zoom:50%;" />
 
 
 
 ## 核显编解码
 
-<img src="https://s4.ax1x.com/2022/01/15/7G3Ei4.png" alt="igpu" style="zoom: 50%;" />
-
-
+![7G3Ei4](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-35-21-7G3Ei4.png)
 
 ## 2.5G 网卡
 
-![network](https://s4.ax1x.com/2022/01/15/7G31oD.png)
+![7G31oD](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-35-59-7G31oD.png)
 
 
 
 ## WIFI
 
-<img src="https://s4.ax1x.com/2022/01/15/7G3wef.png" alt="wifi" style="zoom:50%;" />
+<img src="https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-36-44-7G3wef.png" alt="7G3wef" style="zoom:50%;" />
 
 
 
@@ -69,13 +63,13 @@
 
 ## 蓝牙
 
-![bluetooth](https://s4.ax1x.com/2022/01/15/7G3fmV.png)
+![7G3fmV](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-37-18-7G3fmV.png)
 
 ## 独立显卡
 
 > 实际上我使用的是迪兰 RX460 X-Serial 896 流处理器版，刷了蓝宝石 RX560 1024 流处理器的 [VBIOS](https://www.techpowerup.com/vgabios/192320/sapphire-rx560-4096-170419)，原则上只要是显存颗粒是镁光类型的 400/500 系 AMD 显卡都可以刷
 
-![graphic-card](https://s4.ax1x.com/2022/01/15/7GGCUU.png)
+![7GGCUU](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-37-58-7GGCUU.png)
 
 
 
@@ -83,29 +77,29 @@
 
 > ROG Z490-G 主板后置接口 12 个，1 个 AURA 灯光接口，1 个蓝牙接口，加上机箱上的若干个接口必定超过 15 个接口，需要有所取舍，我的定制接口为删除后置接口上混合接口的两个 USB2.0 接口以及机箱上的 USB2.0 接口(即机箱上仅保留两个 3.0 接口)
 
-![usb-note](https://s4.ax1x.com/2022/01/15/7GGA29.png)
+<img src="https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-39-40-7GGA29.jpg" alt="7GGA29" style="zoom:50%;" />
 
 
 
-![usb-hackintosh](https://s4.ax1x.com/2022/01/15/7GG9ET.png)
+![7GG9ET](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-40-19-7GG9ET.png)
 
 
 
 ## iCloud
 
-![icloud](https://s4.ax1x.com/2022/01/15/7Gz6eK.png)
+![7Gz6eK](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-41-02-7Gz6eK.png)
 
 
 
 ## 隔空投送
 
-![airdrop](https://s4.ax1x.com/2022/01/15/7Gzzyq.png)
+![7Gzzyq](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-41-37-7Gzzyq.png)
 
 
 
 ## iMessage
 
-![imessage](https://s4.ax1x.com/2022/01/15/7JSkY4.png)
+![7JSkY4](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-42-14-7JSkY4.png)
 
 
 
@@ -121,7 +115,7 @@
 
 *问题情况：* 在第一次开机或在 macOS 下重启会出现以下情况
 
-![stopF1](https://s4.ax1x.com/2022/01/15/7JChAf.png)
+![7JChAf](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-43-17-7JChAf.jpg)
 
 **产生此问题的原因是 Apple RTC 写入了主板不支持或它所没有的区域，从而导致的崩溃与错误**
 
@@ -149,7 +143,7 @@
 
    `ROG Z490-G` 的屏蔽区域为: 0x57-0x58
 
-   ![rtc-fix](https://s4.ax1x.com/2022/01/16/7tYWy4.png)
+   ![7JPjsA](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-44-19-7JPjsA.png)
 
 ## 引导方式
 
@@ -157,15 +151,15 @@
 
    > 至于为什么没有使用更新的 0.7.6+？是因为官方的 [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) 文档指导只支持到 0.7.5，后面跟随文档升级再升级 OC 版本(主要是懒，不想细看 OC 每个版本升级的 Differences.pdf 文档)
 
-   ![version](https://s4.ax1x.com/2022/01/16/7tUdyD.png)
+![7tUdyD](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/11-48-00-7tUdyD.png)
 
    
 
-   ### OpenCore 主题
+### OpenCore 主题
 
    > 使用不同的主题需对应修改不同的 icon 图标，根据个人喜好制作即可，制作教程可参考远景此篇文章：[自制一个属于自己的oc主题，背景及图标定制教程（新版转换app)](https://bbs.pcbeta.com/viewthread-1883489-1-1.html)
 
-   ![theme](https://s4.ax1x.com/2022/01/16/7ttpkt.jpg)
+![7ttpkt](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/12-39-14-7ttpkt.jpg)
 
 
 
@@ -221,8 +215,8 @@
 
 3. 使用 [genSMBIOS](https://github.com/corpnewt/GenSMBIOS) 生成机器对应的三码信息放入到如下图样例所示：
 
-   ![smbios-info](https://s4.ax1x.com/2022/01/16/7t0a4A.png)
+   ![7qcMHx](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/12-44-53-7qcMHx.png)
 
    又或者使用 OCAT 自动生成三码:
 
-   ![ocat-info](https://s4.ax1x.com/2022/01/16/7t07bF.png)
+   ![7qc34O](https://gitee.com/anlostsheep/infinity-images/raw/master/uPic/2022/01/27/13-27-41-7qc34O.png)
