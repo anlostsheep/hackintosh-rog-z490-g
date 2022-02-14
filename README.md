@@ -2,9 +2,16 @@
 
 # Hackintosh ROG Z490-G
 
-> 华硕 ROG Z490-G + Intel 10700K + AMD Radeon RX560 显卡黑苹果 EFI 制作分享
+> 华硕 ROG Z490-G + Intel 10700K + AMD Radeon ~~RX560~~ RX6600XT 显卡黑苹果 EFI 制作分享
 
 
+
+## 更新日志
+
+### 2022-02-14
+
+1. 更新 OC 引导为 0.7.8-RELEASE 版本
+2. 更新显卡为蓝宝石 RX6600XT 超白金，并注入 `PP_PhmSoftPowerPlayTable` 限制显卡频率至 1700MHz - 2200MHz 已解决显卡啸叫问题
 
 # 硬件配置
 
@@ -12,7 +19,7 @@
 | ---- | ------------------------------------------------------------ |
 | 主板 | [华硕 ROG Z490-G](https://rog.asus.com.cn/motherboards/rog-strix/rog-strix-z490-g-gaming-model/spec) |
 | 内存 | [芝奇皇家戟 3600MHz C18 8Gx2](https://item.jd.com/100001749045.html) |
-| 显卡 | [迪兰 RX560 X-Serial 4G](http://www.dataland.com.cn/prod_view.aspx?nid=3&typeid=134&id=906) |
+| 显卡 | ~~[迪兰 RX560 X-Serial 4G](http://www.dataland.com.cn/prod_view.aspx?nid=3&typeid=134&id=906)~~ [蓝宝石 RX6600XT](https://www.sapphiretech.com/zh-cn/consumer/nitro-radeon-rx-6600-xt-8g-gddr6_c) |
 | 硬盘 | [西数 SN750 500G](https://item.jd.com/100003226990.html) + [铠侠 RC10 1TB](https://item.jd.com/100012956294.html#crumb-wrap) |
 | 网卡 | [奋威 FV-T919](https://detail.tmall.com/item.htm?id=569974443985&spm=a230r.7195193.1997079397.6.2cf01358N7YsVb&abbucket=11&skuId=3664842621832) |
 | 机箱 | [先马趣造](https://item.jd.com/100016685580.html)            |
